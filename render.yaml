@@ -1,0 +1,15 @@
+# Render Blueprint — deploys Melegy AI as a free Web Service.
+# In Render: New + -> Blueprint -> pick the repo that contains this file.
+# After the first deploy, set GEMINI_API_KEY in the service's
+# Environment tab (it is declared below with sync: false on purpose —
+# the value is never stored in the repo).
+services:
+  - type: web
+    name: melegy-ai
+    env: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false

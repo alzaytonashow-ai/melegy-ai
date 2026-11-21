@@ -1,0 +1,1 @@
+{"description":"Melegy AI — standalone deployable build (Vision AI Studio). Zero-dependency Node.js server: UI + API + database.","engines":{"node":">=18"},"name":"melegy-ai-standalone","private":true,"scripts":{"start":"node server.js"},"type":"commonjs","version":"1.0.0"}
